@@ -2,7 +2,7 @@
   "name": "ecomm-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bryanmf87.github.io/Ecommerce-website/",
+  "homepage": "https://bryanmf87.github.io/ecommerce-website/",
   "proxy": "http://localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
