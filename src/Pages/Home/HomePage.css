@@ -28,6 +28,10 @@ section:first-child {
         margin: 2rem auto 0 auto;
     }
 
+    .hero button {
+        width: max-content;
+    }
+
 .customer-reviews {
     background-color: #f3f3f3;
 }
