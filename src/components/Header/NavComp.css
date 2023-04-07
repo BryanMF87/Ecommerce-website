@@ -8,13 +8,18 @@
 .promo-bar {
     background: black;
     color: rgb(255, 255, 255);
-    font-size: .85rem;
+    font-size: .75rem;
     letter-spacing: .05rem;
-    padding: .75rem 0 .75rem 3.25rem;
+    padding: .75rem 0 .75rem 0;
+    text-align: center;
 }
 
 .brand {
     font-family: 'Satisfy', serif;
+}
+
+.brand span {
+    display: none;
 }
 
 .nav-list {
@@ -85,3 +90,10 @@
     margin-top: -1rem;
     margin-left: 1rem;
 }
+
+
+@media screen and (min-width: 450px) {
+    .brand span {
+        display: inline;
+    }
+};

@@ -4,7 +4,14 @@ body, html {
   margin: 3.25rem 0 0 0;
   box-sizing: border-box;
   font-family: 'Chivo', sans-serif;
+  width: 100%;
   height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 h1 {
@@ -77,13 +84,13 @@ section {
   gap: 15px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   h1 {
     line-height: 5rem;
     margin: 1rem auto 2rem auto;
@@ -94,8 +101,15 @@ section {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .card-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 3.75rem;
   }
 }

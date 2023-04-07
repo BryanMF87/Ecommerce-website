@@ -29,7 +29,7 @@ function SidebarProduct({name, qty, price, image, cartItems, setCartItems}) {
                 <div className="numbers">
                     <Counter name={name} cartItems={cartItems} setCartItems={setCartItems}/>
                     <p className="sub-total">${subTotal}</p>
-                    <button className="remove" onClick={remove}>Remove</button>
+                    <button className="remove" onClick={remove}>X</button>
                 </div>
             </div>
         </div>

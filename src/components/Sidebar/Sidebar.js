@@ -17,7 +17,7 @@ function Sidebar({cartItems, setCartItems, sidebarStatus, setSidebarStatus}) {
     return (
         <div className={sidebarStatus ? "sidebar-open" : "sidebar-closed"}>
             <div className="close-button" onClick={hideSidebar}>
-                <i className="bi bi-file-excel-fill"></i> Close
+                <i className="bi bi-file-excel-fill"></i>
             </div>
             <div className="sidebar-header"> 
                 <h3>Shopping Cart</h3>

@@ -15,6 +15,10 @@
     height: 4rem;
 }
 
+button { 
+    color: black;
+}
+
 .cart-item-info {
     width: 100%;
 }

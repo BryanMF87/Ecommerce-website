@@ -15,7 +15,7 @@ function NavComp({cartItems, sidebarStatus, setSidebarStatus}) {
             </div>
             <ul className="nav-list">
                 <li className="nav-item brand">
-                    <Link to="/"><i className="bi bi-hearts"></i> Sweet Treats</Link>
+                    <Link to="/"><i className="bi bi-hearts"></i> <span>Sweet Treats</span></Link>
                 </li>
                 <li className="nav-item">
                     <a href="#"><i className="bi bi-search" alt="search"></i></a>

@@ -18,37 +18,31 @@ function App() {
     localStorage.setItem("storedData", JSON.stringify(cartItems))
   }, [cartItems]);
 
-
-  // const selectedItems = cartItems.filter((obj)=>obj.qty >= 1);
-  // console.log(selectedItems.length);
-
-
   const [sidebarStatus, setSidebarStatus] = useState(false);
 
   return (
     <div className="App">
-    <NavComp 
-          // cartCount={cartCount} 
+      <NavComp 
+            cartItems={cartItems}
+            sidebarStatus={sidebarStatus} 
+            setSidebarStatus={setSidebarStatus} 
+      />
+      <Routes>
+        <Route path="/" element={<HomePage 
+            setCartItems={setCartItems}
+            cartItems={cartItems} />} />
+        <Route path="/ShopPage" element={<ShopPage 
+            setCartItems={setCartItems}
+            cartItems={cartItems} />} /> 
+      </Routes>
+      
+      <Sidebar 
           cartItems={cartItems}
+          setCartItems={setCartItems}
           sidebarStatus={sidebarStatus} 
-          setSidebarStatus={setSidebarStatus} />
-    <Routes>
-      <Route path="/" element={<HomePage 
-          // setCartCount={setCartCount}
-          setCartItems={setCartItems}
-          cartItems={cartItems} />} />
-      <Route path="/ShopPage" element={<ShopPage 
-          // setCartCount={setCartCount}
-          setCartItems={setCartItems}
-          cartItems={cartItems} />} /> 
-    </Routes>
-    
-    <Sidebar 
-        cartItems={cartItems}
-        setCartItems={setCartItems}
-        sidebarStatus={sidebarStatus} 
-        setSidebarStatus={setSidebarStatus} />
-    <FooterComp />   
+          setSidebarStatus={setSidebarStatus} 
+      />
+      <FooterComp />   
     </div>
   );
 }
