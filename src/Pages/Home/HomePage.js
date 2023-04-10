@@ -8,7 +8,7 @@ const FavoritesCardData = productCardData.filter((productObj) => productObj.favo
 function HomePage({setCartCount, cartItems, setCartItems}) {
     return (
         <main>
-            <section>
+            <section className="hero-section">
                 <div className="hero">
                     <div className="hero-text">
                         <h1>World class macarons</h1>
@@ -21,7 +21,7 @@ function HomePage({setCartCount, cartItems, setCartItems}) {
             <section>
                 <h2>Featured Flavors</h2>
                 <div className="card-grid">
-                    {FavoritesCardData.map((obj, index) => (
+                    {FavoritesCardData.map((obj) => (
                         <ProductCard 
                             key={obj.name}
                             name={obj.name} 

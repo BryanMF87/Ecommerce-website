@@ -2,11 +2,22 @@ section:first-child {
     background-color: #f3f3f3;
 }
 
-.hero {
+.hero-section {
+    background: url("../../hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .hero-text {
         color: black;
@@ -15,17 +26,6 @@ section:first-child {
 
     .hero-text h3 {
         margin-top: -1rem;
-    }
-
-    .hero-image {
-        background: url("https://images.unsplash.com/photo-1558312657-b2dead03d494?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 150px;
-        width: 500px;
-        max-width: 80vw;
-        margin: 2rem auto 0 auto;
     }
 
     .hero button {

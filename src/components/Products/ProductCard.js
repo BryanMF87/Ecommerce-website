@@ -6,7 +6,8 @@ function ProductCard({name, price, image, qty, setCartCount, cartItems, setCartI
 
     return (
         <div className="card">
-            <div className="product-image" style={{backgroundImage: `url(${image})`}}></div>
+            {/* <div className="product-image" style={{backgroundImage: `url(${image})`}}></div> */}
+            <img src={image} alt="macaron"/>
             <div className="product-info">
                 <div className="product-title">{name}</div>
                 <div className="product-price">${price} each</div>
